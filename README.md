@@ -1,17 +1,15 @@
-# node-typescript-jest-boilerplate
+# Anova's node-typescript-jest-boilerplate
 
-Boilerplate for a node server or library written in typescript, using jest as
+Boilerplate for a node server or library written in Typescript, using jest as
 the test runner.
 
 ## Usage
 
-Clone the boilerplate as a new project:
+Select "Use this template" above to create a new repo from this template.
 
-```bash
-git clone https://github.com/bschlenk/node-typescript-jest-boilerplate.git <project>
-```
+## Build
 
-Update [package.json](package.json) as you see fit.
+Run `npm build`. Compiled TS will be in a new `dist/` directory`.
 
 ## Modifications
 
