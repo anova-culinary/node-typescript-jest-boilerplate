@@ -1,0 +1,12 @@
+{
+  // extend your base config so you don't have to redefine your compilerOptions
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.pageObject.ts",
+    "**/*.pageObject.tsx",
+    "**/*.fixture.ts",
+  ]
+}

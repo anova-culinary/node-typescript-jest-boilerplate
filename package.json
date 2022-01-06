@@ -17,20 +17,17 @@
     "!**/__tests__/**/*"
   ],
   "scripts": {
-    "prepare": "husky install",
     "clean": "rm -rf build coverage",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "test:unit": "jest",
     "test:watch": "npm run jest -- --watch",
-    "test": "npm run lint && npm run test:unit",
+    "test": "npm run test:unit",
     "watch": "nodemon",
-    "build": "tsc",
+    "build": "tsc --listFiles",
     "prepublishOnly": "npm run test && npm run build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
     "@types/jest": "^26.0.23",
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
@@ -38,7 +35,7 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
-    "husky": "^7.0.0",
+    "eslint-plugin-jest": "^25.3.4",
     "jest": "^27.0.6",
     "lint-staged": "^11.0.0",
     "nodemon": "^2.0.9",
